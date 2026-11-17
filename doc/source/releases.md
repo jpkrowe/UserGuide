@@ -1,7 +1,7 @@
 # MDAnalysis Release Notes
 
 
-## Overview
+## Release 2.11.0 of MDAnalysis
 
 This is a minor release of MDAnalysis.
 
@@ -17,7 +17,7 @@ See the [CHANGELOG](https://github.com/MDAnalysis/mdanalysis/blob/release-2.11.0
 
 ### Analysis methods
 
-* Paralllelization supporrt for; DiffusionMap (PR #4745), AtomicDistances (PR #4822),
+* Parallelization support for; DiffusionMap (PR #4745), AtomicDistances (PR #4822),
 * DSSP improvements
   * Inclusion of PRO in secondary structure assessment (PR #5065).
   * Improved performance of distance calculations and correctly handles periodic boundaries in hydrogen bond detection (PR #5182).
@@ -26,7 +26,7 @@ See the [CHANGELOG](https://github.com/MDAnalysis/mdanalysis/blob/release-2.11.0
 * Fix to mean aggregation of InterRDF bins when running in parallel (PR #5344).
 * Fix to issue where numpy boolean arrays passed to `run()` would incorrectly select frame indices (PPR #5476).
 * Fix to incorrect reduction of eigenvectors in the `GNMAnalysis` class when running analysis with multiprocessing (PR #5495).
-* Fix incorrect aggreggation in `InterRDF_s` when running in parallel (PR #5497).
+* Fix incorrect aggregation in `InterRDF_s` when running in parallel (PR #5497).
 
 ### File formats
 
@@ -45,7 +45,7 @@ See the [CHANGELOG](https://github.com/MDAnalysis/mdanalysis/blob/release-2.11.0
 * Significant `AtomGroup.wrap()` performance improvement. `wrap()` now scales close to O(N) instead of O(N^2) at large compound counts.
 * Bond guessing now words with mixed case atomtypes (PR #5343).
 * Velocities and forces are now also rotated when applying trajectory rotation transformations (PR #5421).
-* Fix inccorrect `capped_distance` in some triclinic boxes (where both `b_x` and `c_y` are non-zero), leading to atom pairs within the cutoff distance being missed (PR #5481).
+* Fix incorrect `capped_distance` in some triclinic boxes (where both `b_x` and `c_y` are non-zero), leading to atom pairs within the cutoff distance being missed (PR #5481).
 
 ## New Contributors
 * [@spyke7](https://github.com/spyke7) made their first contribution in https://github.com/MDAnalysis/mdanalysis/pull/5153
@@ -73,7 +73,7 @@ See the [CHANGELOG](https://github.com/MDAnalysis/mdanalysis/blob/release-2.11.0
 
 **Full Changelog**: https://github.com/MDAnalysis/mdanalysis/compare/package-2.10.0...package-2.11.0
 
-## Overview
+## Release 2.10.0 of MDAnalysis
 
 This is a minor release of MDAnalysis.
 
